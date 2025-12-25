@@ -1,0 +1,40 @@
+#root {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 2rem;
+  text-align: center;
+}
+
+.container {
+  font-family: Arial, sans-serif;
+  text-align: left;
+}
+
+h1 {
+  text-align: center;
+  color: #333;
+}
+
+.layout {
+  display: flex;
+  gap: 20px;
+  margin-top: 20px;
+}
+
+.sidebar {
+  flex: 1;
+  max-width: 350px;
+}
+
+.main-content {
+  flex: 2;
+}
+
+@media (max-width: 768px) {
+  .layout {
+    flex-direction: column;
+  }
+  .sidebar {
+    max-width: 100%;
+  }
+}
